@@ -1,10 +1,8 @@
 package com.bookingwizard.api.repositories;
 
 import com.bookingwizard.api.models.Company;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.data.repository.ListCrudRepository;
 
-@RepositoryRestResource(collectionResourceRel = "companies", path = "companies")
-public interface CompanyRepository extends CrudRepository<Company, Long> {
+public interface CompanyRepository extends ListCrudRepository<Company, Long> {
 
 }
